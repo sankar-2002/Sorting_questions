@@ -8,7 +8,7 @@ void countSort(int arr[], int n) {
         k=max(k,arr[i]);
     }
 
-    int count[10] = {0}; //as it is not possible to dynamicaaly allocate memory in arr as k...therefore make an arr of n-1 and initialize with zero..
+    int count[10] = {0}; //as it is not possible to dynamically allocate memory in arr as k...therefore make an arr of n+1 and initialize with zero..
 
     for(int i=0; i<n; i++) { //storing the count of elements of arr in count arr...
         count[arr[i]]++;
